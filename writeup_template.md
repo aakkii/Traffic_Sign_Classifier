@@ -159,15 +159,59 @@ The model was able to correctly guess 6 of the 6 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For all 6 images model is quite sure about it's prediction. This is surprizing to me as well. I think it is probably because I choose very nice images from the web comapred to test sets.
 
+1st Image
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 1.0        			| Traffic Signal   									| 
+| less than 0.001    				| General caution 										|
+| less than 0.001					| Speed limit (30km/h)											|
+| less than 0.001	      			| Keep right					 				|
+| less than 0.001				    | Turn left ahead      							|
 
 
-For the second image ... 
+2nd Image
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| Right Turn   									| 
+| less than 0.001    				| Speed limit (30km/h) 										|
+| less than 0.001					| Roundabout mandatory											|
+| less than 0.001	      			| Priority road					 				|
+| less than 0.001				    | Speed limit (70km/h)     							| 
+
+3rd Image
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .99         			| Pedestrians   									| 
+| less than 0.001    				| Right-of-way at the next intersection 										|
+| less than 0.001					| Children crossing											|
+| less than 0.001	      			| General caution				 				|
+| less than 0.001				    | Dangerous curve to the right     							| 
+
+4th Image
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0        			| Straight Ahead   									| 
+| less than 0.001    				| Speed limit (60km/h) 										|
+| less than 0.001					| No passing										|
+| less than 0.001	      			| Speed limit (20km/h)				 				|
+| less than 0.001				    | Speed limit (30km/h)     							| 
+
+5th Image
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0        			| Children crossing   									| 
+| less than 0.001    				| Right-of-way at the next intersection 										|
+| less than 0.001					| Beware of ice/snow									|
+| less than 0.001	      			| Dangerous curve to the right				 				|
+| less than 0.001				    | Dangerous curve to the left   							| 
+
+6th Image
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0        			| Road work     									| 
+| less than 0.001    				| Dangerous curve to the right 										|
+| less than 0.001					| Speed limit (20km/h)										|
+| less than 0.001	      			| Speed limit (30km/h)				 				|
+| less than 0.001				    | Speed limit (50km/h)     							| 
