@@ -75,7 +75,7 @@ My final training set had 29407 number of images. My validation set and test set
 
 I didn't opt for augmenting the dataset further since I was able to get about 98% accuracy with my preprocessing. 
 
-![alt text][image3]
+
 
 ####3. Architecture of model
 
@@ -162,6 +162,7 @@ The code for making predictions on my final model is located in the 11th cell of
 For all 6 images model is quite sure about it's prediction. This is surprizing to me as well. I think it is probably because I choose very nice images from the web comapred to test sets.
 
 1st Image
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.0        			| Traffic Signal   									| 
@@ -172,6 +173,7 @@ For all 6 images model is quite sure about it's prediction. This is surprizing t
 
 
 2nd Image
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.0         			| Right Turn   									| 
@@ -181,6 +183,7 @@ For all 6 images model is quite sure about it's prediction. This is surprizing t
 | less than 0.001				    | Speed limit (70km/h)     							| 
 
 3rd Image
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | .99         			| Pedestrians   									| 
@@ -190,6 +193,7 @@ For all 6 images model is quite sure about it's prediction. This is surprizing t
 | less than 0.001				    | Dangerous curve to the right     							| 
 
 4th Image
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.0        			| Straight Ahead   									| 
@@ -199,6 +203,7 @@ For all 6 images model is quite sure about it's prediction. This is surprizing t
 | less than 0.001				    | Speed limit (30km/h)     							| 
 
 5th Image
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.0        			| Children crossing   									| 
@@ -208,6 +213,7 @@ For all 6 images model is quite sure about it's prediction. This is surprizing t
 | less than 0.001				    | Dangerous curve to the left   							| 
 
 6th Image
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.0        			| Road work     									| 
