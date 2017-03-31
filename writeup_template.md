@@ -28,7 +28,7 @@ The goals / steps of this project are the following:
 
 ###Data Set Summary & Exploration
 
-####2. Dataset Loading and summary
+####1. Dataset Loading and summary
 
 The code for this step is contained in the 1st and 2nd code cell of the IPython notebook.  
 
@@ -59,10 +59,7 @@ The code for this step is contained in the 3rd, 4th and 5th code cell of the IPy
 * Training and validation datasets are combined to form one large training dataset.
 * Training images are in color. But for our model color doesn't matter. So model is converting all images to grayscale.
 * After converting training dataset images to grayscale, code is normalizing the images. This is needed so that all training vector values can be distributed between specified values and that helps in finding better maxima and faster learning.
-* 10 image output is shown in Traffic_Sign_Classifier.ipynb after preprocssing to display before and after preprocessed images.
-
-
-![alt text][image2]
+* 10 image output is shown in output of Cell 4 in Traffic_Sign_Classifier.ipynb after preprocssing to display before and after preprocessed images.
 
 
 ####2. Dividing data into training and validation dataset.
@@ -86,18 +83,31 @@ The LeNet architecture accepts a 32x32x3 image as input.
 
 Architecture
 Layer 1: Convolutional. The output shape should be 28x28x6.
+
 Activation. RELU activation function.
+
 Pooling. The output shape should be 14x14x6.
+
 Layer 2: Convolutional. The output shape should be 10x10x16.
+
 Activation. RELU activation function.
+
 Pooling. The output shape should be 5x5x16.
+
 Flatten. Flatten the output shape of the final pooling layer such that it's 1D instead of 3D.
+
 Layer 3: Fully Connected. This should have 120 outputs.
+
 Activation. Your choice of activation function.
+
 Layer 4: Fully Connected. This should have 84 outputs.
+
 Activation. RELU activation function.
+
 Layer 5: Fully Connected (Logits). This should have 43 outputs.
+
 Output
+
 Return the result of the 2nd fully connected layer.
 
 
@@ -108,12 +118,16 @@ Return the result of the 2nd fully connected layer.
 The code for training the model is located in the 8-11 cells of the ipython notebook. 
 
 To train the model, I used an below parameters
+
 EPOCH- 60
+
 Optimizer - AdamOptimizer
+
 Learning rate- 0.001
+
 Batch Size - 128
 
-####5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+####5. Approch for the soultion
 
 The code for calculating the accuracy of the model is located in the 10-11 cell of the Ipython notebook.
 
@@ -122,21 +136,27 @@ My final model results were:
 * test set accuracy of o.925
 
 I first started with wellknown LENET model. I started with this model since it was recommeded by Udacity and also it is well known model that works very well with MNIST. 
+
 I got around 0.86 accuracy on validation dataset by using this model.
+
 To increase the accuracy I first converted images to grayscale since color is not important factor and also LENET is based on grayscale images. By doing this I got around 0.9 accuracy.
+
 Then I preprocessed images with minmax normalizer. This helped me to increase accuracty to about 0.94
+
 Then I tried combined training and validation sets and then shuffing and dividing with 75-25% rule. This gave me about 0.93 accuracy.
+
 Then I increased number of EPOCH to 60 and it gave me 0.987 accuracy.
+
 After this, I tried this on training dataset and it gave me 0.925 accuracy.  
 
 ###Test a Model on New Images
 
-####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+####1. Five image testing
 
 Six German traffic sign is displyed in output of 11th cell of the Ipython notebook
 
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+####2. 
 
 The code for making predictions on my final model is located in the tenth cell of the Ipython notebook.
 
