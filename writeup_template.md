@@ -133,7 +133,7 @@ The code for calculating the accuracy of the model is located in the 10-11 cell 
 
 My final model results were:
 * validation set accuracy of 0.987
-* test set accuracy of o.925
+* test set accuracy of 0.925
 
 I first started with wellknown LENET model. I started with this model since it was recommeded by Udacity and also it is well known model that works very well with MNIST. 
 
@@ -143,7 +143,7 @@ To increase the accuracy I first converted images to grayscale since color is no
 
 Then I preprocessed images with minmax normalizer. This helped me to increase accuracty to about 0.94
 
-Then I tried combined training and validation sets and then shuffing and dividing with 75-25% rule. This gave me about 0.93 accuracy.
+Then I tried combined training and validation sets and then shuffing and dividing with 75-25% rule. This gave me about 0.95 accuracy.
 
 Then I increased number of EPOCH to 60 and it gave me 0.987 accuracy.
 
@@ -175,7 +175,7 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 6 of the 6 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 92.4%
 
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+####3. 
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
