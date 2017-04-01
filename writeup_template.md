@@ -153,7 +153,9 @@ After this, I tried this on training dataset and it gave me 0.925 accuracy.
 
 ####1. Five image testing
 
-Six German traffic sign is displyed in output of 11th cell of the Ipython notebook
+Six German traffic sign is displyed in output of 11th cell of the Ipython notebook. Images I have used have very nice resolution (180x158) and of very good quality with clearn visibility. That means it should be realativey easier for model to classify. I am resizing these images to 32x32 before providing them as input to my model. 
+
+
 
 
 ####2. 
